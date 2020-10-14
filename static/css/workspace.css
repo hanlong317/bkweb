@@ -1,0 +1,1232 @@
+@charset "utf-8";
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change,without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome,Firefox,and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11,Safari,and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11,Safari,and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+,Safari,and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+,Safari,and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+  vertical-align: top;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation:by default,Chrome and Safari on OS X allow very limited
+ * styling of `select`,unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue:affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+,Safari,and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox,IE 8/9/10/11,and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing,padding,or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`,it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border,margin,and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE:the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  font-size: 1.5em;
+}
+ul,
+li,
+dl,
+dd,
+dt,
+p {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+input::-ms-clear {
+  display: none;
+}
+a:focus,
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+table {
+  width: 100%;
+}
+cite,
+em {
+  font-style: normal;
+}
+/* css3 v1.0 */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  overflow-y: auto;
+  background-color: #fff;
+}
+body {
+  font-size: 75%;
+  line-height: 1.5em;
+  font-family: Arial, '\5FAE\8F6F\96C5\9ED1', 'Microsoft YaHei', SimSun, sans-serif;
+  color: #333333;
+  background: none;
+}
+.workspace {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.workspace body {
+  height: 100%;
+}
+.main {
+  position: relative;
+  min-width: 1000px;
+}
+.main .hd {
+  position: relative;
+}
+.main .hd .banner {
+  position: relative;
+  height: 90px;
+  background: url('../images/workspace/bg-workspace-hd.jpg') repeat-x;
+  overflow: hidden;
+}
+.main .hd .banner:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 429px;
+  height: 90px;
+  background: url('../images/workspace/bg-workspace-hd-right.png') right top no-repeat;
+}
+.main .hd .banner .logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 85px;
+  width: 572px;
+  background: url('../images/workspace/sgm_logo.png') no-repeat;
+  margin: 0px 0px 0px 0px;
+}
+.main .hd .banner .ch-name {
+  font-size: 37px;
+  margin-top: 28px;
+  margin-left: 260px;
+  color: #04aedf;
+  letter-spacing: 0.11em;
+  text-shadow: #ffffff 0 0 0, #fdfdfd 0 1px 0, #ffffff 0px 0 0, #ffffff 0 -2px 0;
+}
+.main .hd .banner .en-name {
+  font-size: 23px;
+  margin-top: 12px;
+  color: #7e7e7e;
+  margin-left: 243px;
+  text-shadow: #ffffff 0 0 0, #fdfdfd 0 1px 0, #ffffff 0px 0 0, #ffffff 0 -2px 0;
+}
+.main .hd .banner .en-name p span {
+  margin-left: 6px;
+  color: #04aedf;
+}
+.main .hd .banner .user-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+}
+.main .hd .banner .user-info li {
+  position: relative;
+  display: inline-block;
+  padding: 0px 8px;
+}
+.main .hd .banner .user-info li:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  height: 10px;
+  border-left: solid 1px #fff;
+  overflow: hidden;
+}
+.main .hd .banner .user-info li a {
+  color: #fff;
+}
+.main .hd .banner .user-info li a:hover {
+  text-decoration: underline;
+}
+.main .hd .banner .user-info li .system-message .badge {
+  position: absolute;
+  top: -11px;
+  left: -9px;
+  color: #fff;
+  line-height: 17px;
+  font-style: normal;
+  padding: 2px;
+  min-width: 21px;
+  z-index: 1;
+  text-align: center;
+}
+.main .hd .banner .user-info li .system-message .badge .span-text {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  z-index: 1;
+  font-size: 11px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+.main .hd .banner .user-info li .system-message .badge:before {
+  color: #fb6b5b;
+  font-size: 17px;
+}
+.main .hd .banner .user-info li .system-message:before {
+  font-size: 15px;
+  position: absolute;
+  left: -15px;
+  top: 1px;
+  color: #FFCA4F;
+  content: "\f003";
+}
+.main .hd .banner .user-info li:first-child:before {
+  border-left: none;
+}
+.main .hd .nav {
+  position: relative;
+  padding-left: 22px;
+  width: 100%;
+  height: 36px;
+  background: #229DD9;
+}
+.main .hd .nav .nav-list {
+  position: relative;
+  zoom: 1;
+  /* for IE6 IE7 */
+}
+.main .hd .nav .nav-list:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.main .hd .nav .nav-list li .menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: -2px;
+  z-index: 1;
+  padding: 5px 0px;
+  width: 210px;
+  min-width: 210px;
+  max-height: 450px;
+  overflow-y: auto;
+  border: solid 2px #229DD9;
+  border-top: none;
+  background-color: #fff;
+}
+.main .hd .nav .nav-list li .menu .accordion h2 {
+  font-weight: 500;
+}
+.main .hd .nav .nav-list li .menu .accordion h2 a {
+  position: relative;
+  display: block;
+  padding: 0px;
+  padding-left: 26px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 0.9em;
+  color: #8A8987;
+  cursor: default;
+  background-color: #fff;
+}
+.main .hd .nav .nav-list li .menu .accordion h2 a:hover {
+  background-color: #fff;
+}
+.main .hd .nav .nav-list li .menu .accordion h2 a:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  width: 10px;
+  height: 8px;
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -0px;
+}
+.main .hd .nav .nav-list li .menu .accordion .menu-list li {
+  float: none;
+}
+.main .hd .nav .nav-list li .menu .accordion .menu-list li a {
+  display: block;
+  padding-left: 28px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 1em;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-repeat: no-repeat;
+  color: #333;
+  background-color: #fff;
+  -webkit-transition: -webkit-background-color 0.4s;
+  -moz-transition: -moz-background-color 0.4s;
+  -ms-transition: -ms-background-color 0.4s;
+  -o-transition: -o-background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.main .hd .nav .nav-list li .menu .accordion .menu-list li a:before {
+  content: none;
+}
+.main .hd .nav .nav-list li .menu .accordion .menu-list li .selected,
+.main .hd .nav .nav-list li .menu .accordion .menu-list li a:hover {
+  background-color: #36a6dc;
+  color: #fff;
+}
+.main .hd .nav .nav-list > li,
+.main .hd .nav .nav-list .workbench,
+.main .hd .nav .nav-list .laws,
+.main .hd .nav .nav-list .standard,
+.main .hd .nav .nav-list .business,
+.main .hd .nav .nav-list .setting,
+.main .hd .nav .nav-list .tool,
+.main .hd .nav .nav-list .help {
+  position: relative;
+  float: left;
+}
+.main .hd .nav .nav-list > li.selected > a,
+.main .hd .nav .nav-list .workbench.selected > a,
+.main .hd .nav .nav-list .laws.selected > a,
+.main .hd .nav .nav-list .standard.selected > a,
+.main .hd .nav .nav-list .business.selected > a,
+.main .hd .nav .nav-list .setting.selected > a,
+.main .hd .nav .nav-list .tool.selected > a,
+.main .hd .nav .nav-list .help.selected > a {
+  color: #1999d7!important;
+  text-decoration: none;
+  background-color: #cfecf2;
+}
+.main .hd .nav .nav-list > li.selected > a:before,
+.main .hd .nav .nav-list .workbench.selected > a:before,
+.main .hd .nav .nav-list .laws.selected > a:before,
+.main .hd .nav .nav-list .standard.selected > a:before,
+.main .hd .nav .nav-list .business.selected > a:before,
+.main .hd .nav .nav-list .setting.selected > a:before,
+.main .hd .nav .nav-list .tool.selected > a:before,
+.main .hd .nav .nav-list .help.selected > a:before {
+  content: none;
+}
+.main .hd .nav .nav-list > li.selected > a:after,
+.main .hd .nav .nav-list .workbench.selected > a:after,
+.main .hd .nav .nav-list .laws.selected > a:after,
+.main .hd .nav .nav-list .standard.selected > a:after,
+.main .hd .nav .nav-list .business.selected > a:after,
+.main .hd .nav .nav-list .setting.selected > a:after,
+.main .hd .nav .nav-list .tool.selected > a:after,
+.main .hd .nav .nav-list .help.selected > a:after {
+  content: '';
+}
+.main .hd .nav .nav-list > li > a,
+.main .hd .nav .nav-list .workbench > a,
+.main .hd .nav .nav-list .laws > a,
+.main .hd .nav .nav-list .standard > a,
+.main .hd .nav .nav-list .business > a,
+.main .hd .nav .nav-list .setting > a,
+.main .hd .nav .nav-list .tool > a,
+.main .hd .nav .nav-list .help > a {
+  position: relative;
+  display: block;
+  padding: 0px 6px 0px 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font-size: 1.3em;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-background-color 0.4s;
+  -moz-transition: -moz-background-color 0.4s;
+  -ms-transition: -ms-background-color 0.4s;
+  -o-transition: -o-background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.main .hd .nav .nav-list > li > a:hover,
+.main .hd .nav .nav-list .workbench > a:hover,
+.main .hd .nav .nav-list .laws > a:hover,
+.main .hd .nav .nav-list .standard > a:hover,
+.main .hd .nav .nav-list .business > a:hover,
+.main .hd .nav .nav-list .setting > a:hover,
+.main .hd .nav .nav-list .tool > a:hover,
+.main .hd .nav .nav-list .help > a:hover {
+  color: #1999d7;
+  text-decoration: none;
+  background-color: #cfecf2;
+}
+.main .hd .nav .nav-list > li > a:hover:before,
+.main .hd .nav .nav-list .workbench > a:hover:before,
+.main .hd .nav .nav-list .laws > a:hover:before,
+.main .hd .nav .nav-list .standard > a:hover:before,
+.main .hd .nav .nav-list .business > a:hover:before,
+.main .hd .nav .nav-list .setting > a:hover:before,
+.main .hd .nav .nav-list .tool > a:hover:before,
+.main .hd .nav .nav-list .help > a:hover:before {
+  content: none;
+}
+.main .hd .nav .nav-list > li > a:hover:after,
+.main .hd .nav .nav-list .workbench > a:hover:after,
+.main .hd .nav .nav-list .laws > a:hover:after,
+.main .hd .nav .nav-list .standard > a:hover:after,
+.main .hd .nav .nav-list .business > a:hover:after,
+.main .hd .nav .nav-list .setting > a:hover:after,
+.main .hd .nav .nav-list .tool > a:hover:after,
+.main .hd .nav .nav-list .help > a:hover:after {
+  content: '';
+}
+.main .hd .nav .nav-list > li > a:before,
+.main .hd .nav .nav-list .workbench > a:before,
+.main .hd .nav .nav-list .laws > a:before,
+.main .hd .nav .nav-list .standard > a:before,
+.main .hd .nav .nav-list .business > a:before,
+.main .hd .nav .nav-list .setting > a:before,
+.main .hd .nav .nav-list .tool > a:before,
+.main .hd .nav .nav-list .help > a:before,
+.main .hd .nav .nav-list > li > a:after,
+.main .hd .nav .nav-list .workbench > a:after,
+.main .hd .nav .nav-list .laws > a:after,
+.main .hd .nav .nav-list .standard > a:after,
+.main .hd .nav .nav-list .business > a:after,
+.main .hd .nav .nav-list .setting > a:after,
+.main .hd .nav .nav-list .tool > a:after,
+.main .hd .nav .nav-list .help > a:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+}
+.main .hd .nav .nav-list > li > a:after,
+.main .hd .nav .nav-list .workbench > a:after,
+.main .hd .nav .nav-list .laws > a:after,
+.main .hd .nav .nav-list .standard > a:after,
+.main .hd .nav .nav-list .business > a:after,
+.main .hd .nav .nav-list .setting > a:after,
+.main .hd .nav .nav-list .tool > a:after,
+.main .hd .nav .nav-list .help > a:after {
+  content: none;
+}
+.main .hd .nav .nav-list .workbench > a:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -8px;
+}
+.main .hd .nav .nav-list .workbench > a:after {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -36px;
+}
+.main .hd .nav .nav-list .laws > a:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -64px;
+}
+.main .hd .nav .nav-list .laws > a:after {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -92px;
+}
+.main .hd .nav .nav-list .standard > a:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -120px;
+}
+.main .hd .nav .nav-list .standard > a:after {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -148px;
+}
+.main .hd .nav .nav-list .business > a:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -176px;
+}
+.main .hd .nav .nav-list .business > a:after {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -204px;
+}
+.main .hd .nav .nav-list .setting > a:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -232px;
+}
+.main .hd .nav .nav-list .setting > a:after {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -260px;
+}
+.main .hd .nav .nav-list .tool > a:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -288px;
+}
+.main .hd .nav .nav-list .tool > a:after {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -316px;
+}
+.main .hd .nav .nav-list .help > a:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -344px;
+}
+.main .hd .nav .nav-list .help > a:after {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -372px;
+}
+.main .hd .nav .user-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  display: none;
+  top: 8px;
+  right: 40px;
+}
+.main .hd .nav .user-info li {
+  position: relative;
+  display: inline-block;
+  padding: 0px 8px;
+}
+.main .hd .nav .user-info li:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  height: 10px;
+  border-left: solid 1px #fff;
+  overflow: hidden;
+}
+.main .hd .nav .user-info li a {
+  color: #fff;
+}
+.main .hd .nav .user-info li a:hover {
+  text-decoration: underline;
+}
+.main .hd .nav .user-info li .system-message .badge {
+  position: absolute;
+  top: -11px;
+  left: -9px;
+  color: #fff;
+  line-height: 17px;
+  font-style: normal;
+  padding: 2px;
+  min-width: 21px;
+  z-index: 1;
+  text-align: center;
+}
+.main .hd .nav .user-info li .system-message .badge .span-text {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  z-index: 1;
+  font-size: 11px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+.main .hd .nav .user-info li .system-message .badge:before {
+  color: #fb6b5b;
+  font-size: 17px;
+}
+.main .hd .nav .user-info li .system-message:before {
+  font-size: 15px;
+  position: absolute;
+  left: -15px;
+  top: 1px;
+  color: #FFCA4F;
+  content: "\f003";
+}
+.main .hd .nav .user-info li:first-child:before {
+  border-left: none;
+}
+.main .hd .nav .zoom {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  height: 36px;
+  color: #fff;
+  -webkit-transition: -webkit-background-color 0.4s;
+  -moz-transition: -moz-background-color 0.4s;
+  -ms-transition: -ms-background-color 0.4s;
+  -o-transition: -o-background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.main .hd .nav .zoom:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -9px 0px 0px -9px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -400px;
+}
+.main .hd .nav .zoom:hover {
+  background-color: #cfecf2;
+}
+.main .hd .nav .zoom:hover:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -418px;
+}
+.main .bd {
+  position: relative;
+  padding: 5px 0px 0px 0px;
+  /* padding-left: 225px; */
+  background-color: #fff;
+  /* width: 15%; */
+  /* width: 100%; */
+  float: left;
+  min-width: 160px;
+}
+.main .bd .side-menu {
+  float: left;
+  /* margin-left: -225px; */
+  /* width: 225px; */
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.main .bd .side-menu .menu {
+  display: none;
+  margin-bottom: 10px;
+}
+.main .bd .side-menu .menu a {
+  display: block;
+  position: relative;
+  color: #36a6dc;
+}
+.main .bd .side-menu .menu .accordion h2 {
+  font-weight: 500;
+}
+.main .bd .side-menu .menu .accordion h2 a {
+  position: relative;
+  padding-left: 26px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+.main .bd .side-menu .menu .accordion h2 a:before,
+.main .bd .side-menu .menu .accordion h2 a:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  margin-right: 0.1em;
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -436px;
+}
+.main .bd .side-menu .menu .accordion h2 a:after {
+  content: none;
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -454px;
+}
+.main .bd .side-menu .menu .accordion .menu-list li a {
+  padding-left: 40px;
+  text-align: left;
+  height: 24px;
+  line-height: 24px;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-background-color 0.4s;
+  -moz-transition: -moz-background-color 0.4s;
+  -ms-transition: -ms-background-color 0.4s;
+  -o-transition: -o-background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.main .bd .side-menu .menu .accordion .menu-list li a:before,
+.main .bd .side-menu .menu .accordion .menu-list li a:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  width: 6px;
+  height: 8px;
+  margin-right: 0.1em;
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -472px;
+}
+.main .bd .side-menu .menu .accordion .menu-list li a:after {
+  content: none;
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -480px;
+}
+.main .bd .side-menu .menu .accordion .menu-list li .selected,
+.main .bd .side-menu .menu .accordion .menu-list li a:hover {
+  background-color: #36a6dc;
+  color: #fff;
+}
+.main .bd .side-menu .menu .accordion .menu-list li .selected:before,
+.main .bd .side-menu .menu .accordion .menu-list li a:hover:before {
+  content: none;
+}
+.main .bd .side-menu .menu .accordion .menu-list li .selected:after,
+.main .bd .side-menu .menu .accordion .menu-list li a:hover:after {
+  content: '';
+}
+.main .bd .side-menu .menu .accordion.off h2 a:before {
+  content: none;
+}
+.main .bd .side-menu .menu .accordion.off h2 a:after {
+  content: '';
+}
+.main .bd .side-menu .menu .accordion.off .menu-list {
+  display: none;
+}
+.content {
+  height: 100%;
+  float: left;
+  width: 100%;
+  /*min-width: 1195px;*/
+}
+.main.full-screen .nav .zoom:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -488px;
+}
+.main.full-screen .nav .zoom:hover:before {
+  background-image: url('../images/workspace/icon-workspace.png');
+  background-position: left -506px;
+}
+.main.full-screen .nav .user-info {
+  display: block;
+}
+.main.full-screen .nav .user-info li {
+  padding: 0px 5px;
+}
+.launcher {
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  text-align: center;
+}
+.launcher .home-application {
+  width: 100%;
+  height: 100%;
+}
+.launcher .application-list {
+  padding-top: 5%;
+  height: 75%;
+  font-size: 0px;
+  zoom: 1;
+  /* for IE6 IE7 */
+}
+.launcher .application-list:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.launcher .application-list li {
+  display: inline-block;
+  padding: 0px 3px;
+  width: 18%;
+  min-width: 118px;
+  color: #f00;
+}
+.launcher .application-list li a {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  height: 50%;
+  min-height: 118px;
+  background-color: #1999d7;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  color: #fff;
+  -webkit-transition: -webkit-background 0.4s;
+  -moz-transition: -moz-background 0.4s;
+  -ms-transition: -ms-background 0.4s;
+  -o-transition: -o-background 0.4s;
+  transition: background 0.4s;
+}
+.launcher .application-list li a:hover {
+  text-decoration: none;
+  background-color: #F60;
+}
+.launcher .application-list li a cite {
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  padding: 0px 2px;
+  width: 100%;
+  line-height: 16px;
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+}
+.create-nav {
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  overflow-y: auto;
+  text-align: center;
+}
+.create-nav .default-icon {
+  width: 100%;
+  height: 100%;
+}
+.create-nav .more-icon {
+  position: absolute;
+  top: -15px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.create-nav .more-icon .icon-back {
+  float: left;
+  margin: 5% 0px 0px 20px;
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-image: url('../images/workspace/sprite/bg-workspace-back.png');
+}
+.create-nav .more-icon .icon-list {
+  display: none;
+}
+.create-nav .icon-list {
+  padding-top: 5%;
+  height: 85%;
+  font-size: 0px;
+}
+.create-nav .icon-list a {
+  position: relative;
+  margin: 0px 0.5% 0.5% 0px;
+  display: inline-block;
+  vertical-align: top;
+  color: #f00;
+  width: 24%;
+  min-width: 118px;
+  height: 40%;
+  min-height: 215px;
+  font-size: 0px;
+  background-color: #1999d7;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.create-nav .icon-list a:hover {
+  text-decoration: none;
+  background-color: #F60;
+}
+.create-nav .icon-list a:hover .el-pic2 {
+  background: #F60;
+}
+.create-nav .icon-list a i {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  padding: 0px 2px;
+  width: 100%;
+  line-height: 16px;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+}
+.create-nav .icon-list .icon-car-use,
+.create-nav .icon-list .icon-renewgc,
+.create-nav .icon-list .icon-subjoin,
+.create-nav .icon-list .icon-bxgmgc,
+.create-nav .icon-list .icon-car-bf,
+.create-nav .icon-list .icon-pretend {
+  background-color: #1960ba;
+}
+.create-nav .icon-list .icon-move-submit,
+.create-nav .icon-list .icon-car-use-fy,
+.create-nav .icon-list .icon-move-submitgc,
+.create-nav .icon-list .icon-transport,
+.create-nav .icon-list .icon-car-pd,
+.create-nav .icon-list .icon-change {
+  background-color: #154899;
+}
+.create-nav .icon-other-list .icon-group {
+  float: left;
+  margin-right: 3px;
+  width: 90%;
+  height: 100%;
+  min-width: 120px;
+}
+.create-nav .icon-other-list .icon-group a {
+  width: 24%;
+  /*margin-top: 6px;*/
+}
+.create-nav .icon-other-list .icon-group:first-child {
+  margin-left: 20px;
+}
+[class*=" el-icon-"], [class^=el-icon-]{
+	cursor: pointer;
+}
+.el-table th {
+  border-top: 1px solid #dfe6ec;
+}
+.create-nav .icon-list .icon-request-import {
+  background-image: url(../images/workspace/icon-request-import.png);
+}

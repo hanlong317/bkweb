@@ -1,0 +1,102 @@
+.el-row {
+	margin-top: 10px;
+}
+.page-container {
+	position: relative;
+	/* padding: 10px 10px 50px 10px; */
+    padding: 10px;
+    background:#fff;
+	box-sizing: border-box;
+}
+.page-container .el-breadcrumb {
+    font-size: 15px;
+    line-height: 1;
+    padding: 7px;
+    border: 1px solid #f6f7fb;
+    //border-radius: 4px;
+    //box-shadow: 0 0 1px 0 #229dd9, 0 1px 1px 0 #229dd9;
+}
+.page-container form .config-content {
+    border: 1px solid #f6f7fb;
+    //border-radius: 4px;
+    //box-shadow: 0 0 1px 0 #229dd9, 0 2px 4px 0 #229dd9;
+    border-top: none;
+    padding: 10px;
+}
+.page-container .config-content {
+    border: 1px solid #f6f7fb;
+    //border-radius: 4px;
+    //box-shadow: 0 0 1px 0 #229dd9, 0 2px 4px 0 #229dd9;
+    border-top: none;
+    //padding: 10px;
+}
+.page-container .action {
+	position: absolute;
+	float: right;
+	top: 14px;
+	right: 10px;
+}
+.page-container .action a {
+	margin-right: 10px;
+}
+.grid-label{
+    text-align: right;
+    padding-right: 6px;
+    padding-top: 3px;
+    color: #2a2a2a;
+}
+.search-btn {
+    text-align: center;
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+.configure-dialog .el-dialog {
+	top: 5% !important;
+}
+[class*=" el-icon-"], [class^=el-icon-]{
+	cursor: pointer;
+}
+
+.bordernone div  {
+    border: 0px;
+}
+
+/* 测点 reportForstage 样式 */
+.page-container .report .el-tabs--border-card>.el-tabs__header {
+    border: 1px solid #229dd9;
+    border-top: none;
+}
+
+.page-container .report .el-tabs--border-card>.el-tabs__content {
+    padding: 0;
+}
+
+.page-container .report .el-table thead {
+    color: #1997d7;
+}
+.page-container .report .el-table__header-wrapper
+ {
+    border-bottom: 1px solid #229dd9;
+}
+.report .el-tabs__content {
+    border: 1px solid #229dd9;
+    border-top: none;
+}
+
+.report .el-select {
+    display: block;
+}
+
+.page-container .el-select,
+.page-container .el-input,
+.page-container .el-date-editor--daterange.el-input
+{
+	 /* width: 193px;  */
+	 width: 100%; 
+} 
+
+.title h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
